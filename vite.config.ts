@@ -25,4 +25,5 @@ build: {
   server: {
     open: true,  // Automatically open the app in the browser
   },
+  base:'/'
 });
