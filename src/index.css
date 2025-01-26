@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+.slick-dots li button:before {
+  @apply text-pink-500 opacity-50;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-pink-600 opacity-100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-pink-600;
+}
