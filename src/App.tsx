@@ -11,7 +11,6 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<any>(null);
 
-  
   useEffect(() => {
     supabase.auth.getUser().then(({ data: { user } }) => {
       setUser(user);
